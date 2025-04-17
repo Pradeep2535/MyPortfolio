@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  /* background-color: rgb(4, 6, 47); */
+  color: white;
+  /* background-color: #003366; */
+  background: #1c1c22;
+
+  overflow-x: hidden;
+}
+
+.line-break {
+  width: 30px;
+  align-items: center;
+  color: black;
+  height: 10px;
+}
