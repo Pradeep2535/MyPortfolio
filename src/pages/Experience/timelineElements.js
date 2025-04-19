@@ -2,7 +2,7 @@ let timelineElements = [
   {
     id: 1,
     title: "Unnati Student Intern",
-    location: "Intel, India",
+    location: "Intel, (Remote)",
     description: [
       "• Developed an AI-powered web app 'AI Comic Factory' that automates comic creation using Streamlit and Generative AI.",
       "• Integrated Stable Diffusion for consistent character and scene generation; exported comics as print-ready PDFs.",
