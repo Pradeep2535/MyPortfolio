@@ -102,8 +102,10 @@ import ai_and_chatgpt from "./ai_and_chatgpt.jpg";
 import ai_for_begginers from "./ai_for_begginers.jpg";
 import profile_image from "./profile_image.png";
 import sheetbot from "./sheetbot.png";
+import profile_2 from "./profile-2.png";
 
 export const home = {
+  profile_2,
   sheetbot,
   profile_image,
   cloud,

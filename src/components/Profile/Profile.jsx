@@ -106,7 +106,7 @@ const Profile = () => {
               strokeDasharray="10 10 30 35 10 10 30 10 30 35"
             />
           </svg>
-          <img className="image" src={home.profile_image} alt="Image" />
+          <img className="image" src={home.profile_2} alt="Image" />
         </div>
       </div>
     </div>
