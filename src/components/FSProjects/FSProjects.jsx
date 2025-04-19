@@ -104,7 +104,7 @@ const FSProjects = () => {
           {aiProjectList.map((project, index) => (
             <li>
               <div className="blob">
-                <div className="container">
+                <div className="fs-projects-container">
                   <img src={project.img} alt="" />
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>

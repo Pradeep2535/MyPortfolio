@@ -2,9 +2,23 @@ import React from "react";
 import { home } from "../../assets/assets.js";
 import "./AIProjects.css";
 
-
 const AIProjects = () => {
   const aiProjectList = [
+    {
+      title: "ShopGenie",
+      img: home.sheetbot,
+      description:
+        "LangGraph‑powered AI agent that executes natural‑language spreadsheet prompts—from basic fill, sort, swap, delete, etc... to complex operations—without formulas or menus. A chat‑style interface to both routine and advanced data tasks with AgenticAI.",
+        skills : [
+          "Agentic AI",
+          "LangGraph",
+          "Python REPL execution",
+          "Prompt engineering",
+      
+          "Human-in-the-loop",
+          
+      ]
+    },
     {
       title: "ShopGenie",
       img: home.shopgenie,
@@ -49,7 +63,7 @@ const AIProjects = () => {
       img: home.hirefit,
       description:
         "ATS Resume Expert streamlines job applications by analyzing resumes against job descriptions, providing a match percentage, keyword insights, and actionable recommendations. It helps job seekers enhance their resumes, making them more ATS-friendly and increasing their chances of landing interviews.",
-      skills: ["Streamlit","LangChain", "OpenAI API", "Output Parsers"],
+      skills: ["Streamlit", "LangChain", "OpenAI API", "Output Parsers"],
     },
     {
       title: "BioCraft.ai",
@@ -62,7 +76,7 @@ const AIProjects = () => {
         "LangChain",
         "Output Parsers",
         "LLM (Gemini model)",
-        "API Integration & Management"
+        "API Integration & Management",
       ],
     },
     {
@@ -75,7 +89,7 @@ const AIProjects = () => {
         "Movies Dataset API",
         "Cosine Similarity",
         "Feature Engineering",
-        "Machine Learning"
+        "Machine Learning",
       ],
     },
   ];
@@ -86,7 +100,7 @@ const AIProjects = () => {
         <ul>
           {aiProjectList.map((project, index) => (
             <li>
-              <div className="container">
+              <div className="ai-projects-container">
                 <img src={project.img} alt="" />
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>

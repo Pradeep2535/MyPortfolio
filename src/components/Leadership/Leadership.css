@@ -31,8 +31,8 @@
     justify-content: center;
 }
 .leadership-skills img{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 .leadership .heading{
@@ -40,4 +40,24 @@
     justify-content:space-around;
     margin-bottom: 20px;
     color: black;
+}
+
+@media (max-width:768px){
+   
+    .leadership{
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 10px;
+        
+    }
+
+    .leadership-skills{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        
+    }
 }

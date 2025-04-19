@@ -44,7 +44,7 @@ const CountSummary = () => {
                     <p>2</p>
                 </div>
                 <div className="right">
-                    <p>Real-Time Mobile Apps</p>
+                    <p>PlayStore Mobile Apps</p>
                 </div>
     
             </div>

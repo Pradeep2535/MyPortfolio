@@ -173,7 +173,7 @@ const Achievements = ({ lineBorder, setLineBorder, setShowLoader }) => {
         setShowLoader={setShowLoader}
       />
       <div className="mainContainer">
-        <div className="achievements-section">
+        <div className="achievements-section-1">
           <h2>Coding Events Won</h2>
           <div className="achievements-list">
             {list.map((item, index) => (

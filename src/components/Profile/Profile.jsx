@@ -9,6 +9,7 @@ import { SiGeeksforgeeks } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoEye } from "react-icons/io5";
+
 const Profile = () => {
   const redirectLinks = (link) => {
     if (link == "Linkedin")

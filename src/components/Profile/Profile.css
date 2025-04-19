@@ -93,10 +93,21 @@
   gap: 20px;
   padding: 10px;
   margin-left: auto;
+  
 }
 
+.profile-icons svg{
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #d2b48c;
+  height: 30px;
+  width: 30px;
+
+}
 .profile-icons svg:hover {
   cursor: pointer;
+
+  
 }
 
 .right-half {
@@ -136,5 +147,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* 👇 Responsive Styles */
+@media (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .profile-icons{
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .greeting,
+  .name {
+    font-size: 40px;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+
+  .download {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-half {
+    margin-top: 30px;
+    margin-left: 0px;
   }
 }

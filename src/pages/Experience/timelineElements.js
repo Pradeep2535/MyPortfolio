@@ -8,7 +8,7 @@ let timelineElements = [
       "• Integrated Stable Diffusion for consistent character and scene generation; exported comics as print-ready PDFs.",
       "• Applied advanced memory optimization (CUDA, Torch, fp16) ensuring efficient performance on low-resource systems.",
     ],
-    buttonText: "View Project",
+    buttonText: "Feb 2025 – Mar 2025",
     date: "Feb 2025 – Mar 2025",
     icon: "work",
   },

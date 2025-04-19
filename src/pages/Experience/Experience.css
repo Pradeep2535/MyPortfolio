@@ -1,19 +1,20 @@
-.role{
+.role {
   color: black;
 }
 
-.description{
+.description {
   color: black;
 }
 
-.subtitle{
+.subtitle {
   color: black;
 }
 
-.main{
-  margin: 80px;
+.main {
+  margin: 40px;
+  margin-top: 40px;
 }
-.icons{
+.icons {
   margin: auto;
   align-items: center;
   height: 100%;
@@ -23,7 +24,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  
 }
 
 .rotating-border {
@@ -57,6 +57,9 @@
   object-fit: contain;
 }
 
+.date-button p {
+  font-size: 0;
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -66,5 +69,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .date-button {
+    color: black;
+    padding-top: 10px;
+  }
 
-
+  .date-button p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+}

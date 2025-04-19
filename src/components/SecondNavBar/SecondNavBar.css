@@ -1,66 +1,118 @@
-.body {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  .second-navbar {
-    /* min-width: 80%;
-      max-width: 80%; */
-    width: 100%;
-    padding: 5px;
-    margin: 10px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 380px;
-  }
-  
-  .navbar-right ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    gap: 20px;
-  }
-  .navbar-left {
-    padding: 10px;
-    /* margin-left: 120px; */
-  }
-  .navbar-left .active {
-    border-bottom: 2px solid #d2b48c;
-    color: #d2b48c;
-    /* padding-top: 5px; */
-  }
-  .navbar-right {
-    padding: 10px;
-  }
-  .navbar-right .active {
-    border-bottom: 2px solid #d2b48c;
-    color: #d2b48c;
-  }
-  
-  .navbar-left ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    gap: 20px;
-  }
+/* Hamburger Icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+.second-navbar {
+  /* min-width: 80%;
+    max-width: 80%; */
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 380px;
+}
+.navbar-right ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 20px;
+}
+.navbar-left {
+  padding: 10px;
+  /* margin-left: 120px; */
+}
+.navbar-left .active {
+  border-bottom: 2px solid #d2b48c;
+  color: #d2b48c;
+  /* padding-top: 5px; */
+}
+.navbar-right {
+  padding: 10px;
+}
+.navbar-right .active {
+  border-bottom: 2px solid #d2b48c;
+  color: #d2b48c;
+}
+
+.navbar-left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 20px;
+}
+.hire-me {
+  padding: 10px;
+  /* margin-right: 30px; */
+}
+.hire-me button {
+  background: transparent;
+  border: 1px solid #444;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #50efaf;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Mobile dropdown */
+.mobile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #222;
+  border-radius: 10px;
+  z-index: 999;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-dropdown ul li {
+  padding: 10px 0;
+  color: white;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+
+.mobile-dropdown ul li:last-child {
+  border-bottom: none;
+}
+
+/* ✅ Mobile View Only */
+@media screen and (max-width: 768px) {
+  .navbar-left,
+  .navbar-right,
   .hire-me {
-    padding: 10px;
-    /* margin-right: 30px; */
+    display: none;
   }
-  .hire-me button {
-    background: transparent;
-    border: 1px solid #444;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #50efaf;
-    padding-left: 20px;
-    padding-right: 20px;
+
+  .second-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 100%;
+    margin: 0px;
   }
-  
+
+  .mobile-menu-icon {
+    display: flex;
+    align-items: flex-end;
+  }
+}

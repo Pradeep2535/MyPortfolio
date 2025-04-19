@@ -8,7 +8,7 @@ const Certifications = ({list,name}) => {
     
     <div>
       <div className="achievements-section">
-        <h2>{name}</h2>
+        <h2 style={{marginTop:0}}>{name}</h2>
         <div className="achievements-list">
           {list.map((item, index) => (
             <div className="achievement-card" key={index}>

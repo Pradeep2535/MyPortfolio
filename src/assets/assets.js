@@ -101,8 +101,10 @@ import flutter_advanced from "./flutter_advanced.jpg";
 import ai_and_chatgpt from "./ai_and_chatgpt.jpg";
 import ai_for_begginers from "./ai_for_begginers.jpg";
 import profile_image from "./profile_image.png";
+import sheetbot from "./sheetbot.png";
 
 export const home = {
+  sheetbot,
   profile_image,
   cloud,
   datascience_bootcamp,

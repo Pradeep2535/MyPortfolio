@@ -59,14 +59,14 @@ const Experience = ({ lineBorder, setLineBorder, setShowLoader }) => {
                   ))}
                 </div>
                 {showButton && (
-                  <a
-                    className={`button ${
-                      isWorkIcon ? "workButton" : "schoolButton"
-                    }`}
-                    href="/"
-                  >
-                    {element.buttonText}
-                  </a>
+                  <div className="date-button">
+                    <p
+                      
+                    
+                    >
+                      {element.date}
+                    </p>
+                  </div>
                 )}
               </VerticalTimelineElement>
             );

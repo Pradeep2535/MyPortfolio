@@ -74,7 +74,7 @@ const Skills = ({ lineBorder, setLineBorder, setShowLoader }) => {
         setLineBorder={setLineBorder}
         setShowLoader={setShowLoader}
       />
-      <h2>Technical Skills</h2>
+      <h2 style={{marginTop:0}}>Technical Skills</h2>
       <div className="container-1">
         <ProgrammingSkills />
         <FrameWorks />
