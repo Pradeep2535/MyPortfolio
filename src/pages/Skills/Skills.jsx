@@ -8,6 +8,7 @@ import Languages from "../../components/Languages/Languages.jsx";
 import Leadership from "../../components/Leadership/Leadership.jsx";
 import Certifications from "../../components/Certifications/Certifications.jsx";
 import SecondNavBar from "../../components/SecondNavBar/SecondNavBar.jsx";
+import ParticlesElem from "../../components/Particles/Particles.jsx";
 
 const Skills = ({ lineBorder, setLineBorder, setShowLoader }) => {
   const nptel = [
@@ -69,12 +70,13 @@ const Skills = ({ lineBorder, setLineBorder, setShowLoader }) => {
   ];
   return (
     <div>
+      <ParticlesElem />
       <SecondNavBar
         lineBorder={lineBorder}
         setLineBorder={setLineBorder}
         setShowLoader={setShowLoader}
       />
-      <h2 style={{marginTop:0}}>Technical Skills</h2>
+      <h2 style={{ marginTop: 0 }}>Technical Skills</h2>
       <div className="container-1">
         <ProgrammingSkills />
         <FrameWorks />

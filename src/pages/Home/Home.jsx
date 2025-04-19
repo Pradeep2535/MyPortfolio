@@ -1,7 +1,8 @@
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar";
-import Profile from "../../components/Profile/Profile";
-import CountSummary from "../../components/CountSummary/CountSummary";
+import NavBar from "../../components/NavBar/NavBar.jsx";
+import Profile from "../../components/Profile/Profile.jsx";
+import CountSummary from "../../components/CountSummary/CountSummary.jsx";
+import ParticlesElem from "../../components/Particles/Particles.jsx";
 
 const Home = ({ lineBorder, setLineBorder, setShowLoader }) => {
   return (
@@ -11,6 +12,7 @@ const Home = ({ lineBorder, setLineBorder, setShowLoader }) => {
         setLineBorder={setLineBorder}
         setShowLoader={setShowLoader}
       />
+      <ParticlesElem />
       <Profile />
       <CountSummary />
     </div>

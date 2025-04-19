@@ -2,6 +2,7 @@ import React from "react";
 import "./Achievements.css";
 import { home } from "../../assets/assets.js";
 import SecondNavBar from "../../components/SecondNavBar/SecondNavBar.jsx";
+import ParticlesElem from "../../components/Particles/Particles.jsx";
 const Achievements = ({ lineBorder, setLineBorder, setShowLoader }) => {
   const list = [
     {
@@ -167,6 +168,7 @@ const Achievements = ({ lineBorder, setLineBorder, setShowLoader }) => {
   ];
   return (
     <div>
+      <ParticlesElem />
       <SecondNavBar
         lineBorder={lineBorder}
         setLineBorder={setLineBorder}

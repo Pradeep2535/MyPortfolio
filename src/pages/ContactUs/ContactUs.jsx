@@ -10,6 +10,8 @@ import emailjs from "@emailjs/browser";
 import Loader from "../../components/Loader/Loader";
 import NavBar from "../../components/NavBar/NavBar";
 import { VscCodeReview } from "react-icons/vsc";
+import Particles from "react-tsparticles";
+import ParticlesElem from "../../components/Particles/Particles";
 
 const ContactUs = ({ lineBorder, setLineBorder, setShowLoader }) => {
   const form = useRef();
@@ -47,14 +49,14 @@ const ContactUs = ({ lineBorder, setLineBorder, setShowLoader }) => {
     try {
       setLoading(true);
 
-      // await emailjs.sendForm(
-      //   "service_4c2f1ae",
-      //   "template_a9975j8",
-      //   form.current,
-      //   {
-      //     publicKey: "XlaWneTV4aaF9gQII",
-      //   }
-      // );
+      await emailjs.sendForm(
+        "service_4c2f1ae",
+        "template_a9975j8",
+        form.current,
+        {
+          publicKey: "XlaWneTV4aaF9gQII",
+        }
+      );
 
       toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", description: "" });
@@ -68,7 +70,7 @@ const ContactUs = ({ lineBorder, setLineBorder, setShowLoader }) => {
   return (
     <div className="contact-wrapper">
       <Loader show={loading} />
-
+      <ParticlesElem />
       <div className={loading ? "blur-content" : ""}>
         <NavBar
           lineBorder={lineBorder}
@@ -103,9 +105,9 @@ const ContactUs = ({ lineBorder, setLineBorder, setShowLoader }) => {
             </form>
             <ToastContainer position="bottom-center" />
           </div>
-          
+
           <div className="connect-me">
-          <VscCodeReview size="200px" className="message-icon"/>
+            <VscCodeReview size="200px" className="message-icon" />
             <h2>Find me on</h2>
             <ul className="social-icons">
               <BsLinkedin
@@ -115,39 +117,46 @@ const ContactUs = ({ lineBorder, setLineBorder, setShowLoader }) => {
                 size="25px"
               />
 
-              <IoIosMail  onClick={() =>
-                  window.open("mailto:pradeep.eng.2535@gmail.com")
-                } size="30px" />
-              <FaWhatsapp onClick={() =>
-                  window.open("https://wa.me/918838909289")
-                } size="27px" />
-              <FaInstagram onClick={() =>
-                  window.open("https://instagram.com/techz_me")
-                } size="27px" />
-              <BsTwitterX onClick={() =>
-                  window.open("https://x.com/PradeepS331445")
-                } size="25px" />
+              <IoIosMail
+                onClick={() => window.open("mailto:pradeep.eng.2535@gmail.com")}
+                size="30px"
+              />
+              <FaWhatsapp
+                onClick={() => window.open("https://wa.me/918838909289")}
+                size="27px"
+              />
+              <FaInstagram
+                onClick={() => window.open("https://instagram.com/techz_me")}
+                size="27px"
+              />
+              <BsTwitterX
+                onClick={() => window.open("https://x.com/PradeepS331445")}
+                size="25px"
+              />
             </ul>
             <div className="mail-mobile">
               <div className="head">Mail</div>
               <div className="dot">:</div>
-              <div className="value" onClick={() =>
-                  window.open("mailto:pradeep.eng.2535@gmail.com")
-                } style={{cursor:"pointer"}}>pradeep.eng.2535@gmail.com</div>
-          
+              <div
+                className="value"
+                onClick={() => window.open("mailto:pradeep.eng.2535@gmail.com")}
+                style={{ cursor: "pointer" }}
+              >
+                pradeep.eng.2535@gmail.com
+              </div>
             </div>
             <div className="mail-mobile">
               <div className="head">Mobile</div>
               <div className="dot">:</div>
-              <div className="value" onClick={() =>
-                  window.open("tel:+918838909289")
-                }  style={{cursor:"pointer"}}>+91 8838909289</div>
-          
+              <div
+                className="value"
+                onClick={() => window.open("tel:+918838909289")}
+                style={{ cursor: "pointer" }}
+              >
+                +91 8838909289
+              </div>
             </div>
-            
           </div>
-
-          
         </div>
       </div>
     </div>

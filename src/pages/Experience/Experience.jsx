@@ -11,6 +11,7 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 import SecondNavBar from "../../components/SecondNavBar/SecondNavBar.jsx";
+import ParticlesElem from "../../components/Particles/Particles.jsx";
 
 const Experience = ({ lineBorder, setLineBorder, setShowLoader }) => {
   let workIconStyles = { background: "#06D6A0", color: "#fff" };
@@ -18,6 +19,7 @@ const Experience = ({ lineBorder, setLineBorder, setShowLoader }) => {
 
   return (
     <div>
+      <ParticlesElem />
       <SecondNavBar
         lineBorder={lineBorder}
         setLineBorder={setLineBorder}
@@ -60,12 +62,7 @@ const Experience = ({ lineBorder, setLineBorder, setShowLoader }) => {
                 </div>
                 {showButton && (
                   <div className="date-button">
-                    <p
-                      
-                    
-                    >
-                      {element.date}
-                    </p>
+                    <p>{element.date}</p>
                   </div>
                 )}
               </VerticalTimelineElement>

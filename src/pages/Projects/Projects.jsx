@@ -3,11 +3,13 @@ import "./Projects.css";
 import AIProjects from "../../components/AIProjects/AIProjects";
 import FSProjects from "../../components/FSProjects/FSProjects";
 import SecondNavBar from "../../components/SecondNavBar/SecondNavBar";
+import ParticlesElem from "../../components/Particles/Particles";
 
 const Projects = ({lineBorder,setLineBorder,setShowLoader}) => {
  
   return (
     <div>
+      <ParticlesElem />
       <SecondNavBar lineBorder={lineBorder} setLineBorder={setLineBorder} setShowLoader={setShowLoader}/>
       <h2 style={{marginTop : 0}}>AI Projects</h2>
       <AIProjects/>

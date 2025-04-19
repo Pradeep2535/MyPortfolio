@@ -12,6 +12,7 @@ import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 
 import { useState } from "react";
 import Loader from "./components/Loader/Loader.jsx";
+
 const App = () => {
   const [lineBorder, setLineBorder] = useState("home");
   const [showLoader, setShowLoader] = useState(false);
