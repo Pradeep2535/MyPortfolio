@@ -39,7 +39,7 @@ const Profile = () => {
         </div>
         <div className="download">
           <div className="resume">
-            <button onClick={() => window.open("https://drive.google.com/file/d/1yHDZN8VAzDjTu2Knb5eomUWrOWvgN7CS/view?usp=sharing")}>
+            <button onClick={() => window.open("https://drive.google.com/file/d/1H2yE-KhWpM6mOT20gAQEdYwgntLtMd6Y/view?usp=sharing")}>
               View Resume{" "}
               <IoEye className="download-resume" />
             </button>
