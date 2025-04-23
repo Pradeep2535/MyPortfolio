@@ -130,7 +130,9 @@
   z-index: 2;
   padding: 25px;
 }
-
+.more-info{
+  display: none;
+}
 .dotted-border {
   position: absolute;
   top: 0;
