@@ -45,6 +45,7 @@ const Profile = () => {
             </button>
           </div>
           <div className="profile-icons">
+            <div className="more-info" style={{color:"#D2B48C"}}>Explore me on <span style={{marginLeft:"5px"}}>➤</span></div>
             <SiLinkedin
               size="18px"
               color="#D2B48C"
